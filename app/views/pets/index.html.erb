@@ -1,0 +1,5 @@
+<% @pets.each do |pet| %>
+  <p><%= link_to pet.name, pet_path(pet) %></p>
+<% end %>
+
+<%= link_to "New pet", new_pet_path %>

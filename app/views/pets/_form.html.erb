@@ -1,0 +1,6 @@
+<%= simple_form_for pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :species, collection: ["cat", "dog", "hamster", "goldfish", "codfish"] %>
+  <%= f.input :age %>
+  <%= f.button :submit %>
+<% end %>
